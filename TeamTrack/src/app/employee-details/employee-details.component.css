@@ -1,0 +1,59 @@
+/* General styling for the viewEmployee section */
+.viewEmployee {
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically */
+    min-height: 60vh; /* Make it take up the full height of the viewport */
+    background-color: #f5f5f5; /* Light background for the entire section */
+    padding: 10px;
+  }
+  
+
+  
+  /* Card style for employee details */
+  .viewdetailed {
+    background: #ffffff; /* White background for the card */
+    padding: 30px; /* Add padding inside the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for a lifted effect */
+    max-width: 500px; /* Restrict the card width */
+    width: 100%; /* Make it responsive */
+  }
+  
+  /* Title styling */
+  .viewdetailed h3 {
+    text-align: center; /* Center the title */
+    font-size: 1.8rem; /* Slightly larger font size for the title */
+    margin-bottom: 20px; /* Add space below the title */
+    color: #333; /* Dark gray color for the title */
+    font-weight: bold;
+  }
+  
+  /* Styling for each detail row */
+  .viewdetailed div {
+    margin-bottom: 15px; /* Add spacing between rows */
+    font-size: 1.2rem; /* Increase the font size slightly */
+  }
+  
+  /* Label styling */
+  .viewdetailed label {
+    font-weight: bold; /* Bold the labels */
+    color: #333; /* Dark color for better readability */
+    display: block; /* Ensures labels are on their own line */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .viewdetailed {
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .viewdetailed h3 {
+      font-size: 1.5rem; /* Adjust the title font size */
+    }
+  
+    .viewdetailed div {
+      font-size: 1rem; /* Adjust the details font size */
+    }
+  }
+  

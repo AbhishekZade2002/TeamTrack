@@ -1,0 +1,36 @@
+.navbar {
+   background: linear-gradient(to right, rgb(3, 95, 142), black); /* Gradient from blue to black */
+   
+    position: scroll;
+    top: 0;
+  }
+
+/* Navigation Menu */
+.navbar-nav {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align the list items */
+    gap: 20px; /* Space between nav items */
+    margin: 20px 0; /* Top and bottom margin for spacing */
+  }
+  
+  .nav-item {
+    list-style: none; /* Remove default bullet points */
+  }
+  
+  .nav-link {
+    color: #fff; /* White text */
+    background-color: #007bff; /* Primary Bootstrap blue color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .nav-link:hover {
+    background-color: hsl(125, 73%, 39%); /* Darker blue on hover */
+  }
+  
+  .nav-link.active {
+    font-weight: bold; /* Highlight active link with bold text */
+    background-color: #0056b3; /* Darker blue background */
+  }

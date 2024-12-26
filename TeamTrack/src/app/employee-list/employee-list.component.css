@@ -1,0 +1,103 @@
+/* General Style for the List Section */
+.list {
+    margin: 50px auto; /* Center the list with margin */
+    max-width: 900px; /* Set maximum width for the list */
+    padding: 30px; /* Add padding to the container */
+    background-color: #f9f9f9; /* Light background color for the list section */
+    border-radius: 8px; /* Rounded corners for the list section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send the video to the background */
+  }
+
+  /* Title Style */
+  .list h1 {
+    text-align: center; /* Center the title */
+    font-size: 3rem; /* Larger font size for the title */
+    margin-bottom: 30px; /* Add margin below the title */
+    color: #333; /* Dark color for the title */
+
+  }
+  
+  /* Table Style */
+  table.table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders between cells */
+    margin-bottom: 20px; /* Space below the table */
+  }
+  
+  table.table th,
+  table.table td {
+    padding: 12px; /* Padding inside the cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light grey border between rows */
+  }
+  
+  table.table th {
+    background: linear-gradient(to right, rgb(3, 95, 142), black); 
+    font-size: 15px;
+    font-style: italic;
+    color: #fff; /* White text for headers */
+  }
+  
+  table.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+  }
+  
+  table.table tbody tr:hover {
+    background-color: #d1ecf1; /* Light blue background on hover for rows */
+  }
+  
+  /* Button Styles */
+  button.btn {
+    padding: 8px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor for buttons */
+  }
+  
+  button.btn-info {
+    background-color: #17a2b8; /* Info blue button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+  }
+  
+  button.btn-info:hover {
+    background-color: #138496; /* Darker blue on hover */
+  }
+  
+  button.btn-danger {
+    background-color: #dc3545; /* Red button for delete */
+    color: white; /* White text */
+    border: none; /* Remove border */
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  button.btn-info + button.btn-info,
+  button.btn-info + button.btn-danger {
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .list {
+      padding: 20px; /* Reduce padding on smaller screens */
+      margin: 20px; /* Adjust margin */
+    }
+  
+    table.table {
+      font-size: 0.9rem; /* Smaller text for tables on small screens */
+    }
+  }
+  

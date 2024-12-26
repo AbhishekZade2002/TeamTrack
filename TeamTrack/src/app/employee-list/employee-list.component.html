@@ -1,0 +1,32 @@
+<div class="list">
+    <h1> Employee List</h1>
+
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="bgimg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th> First Name</th>
+                <th> Last Name </th>
+                <th> Email Id</th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td> {{ employee.firstName }} </td>
+                <td> {{ employee.lastName }} </td>
+                <td> {{ employee.emailId }} </td>
+                <td>
+                    <button (click)="updateEmployee(employee.id)" class="btn btn-info"> Update</button>
+                    <button (click)="deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px">
+                        Delete</button>
+                    <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">
+                        View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
